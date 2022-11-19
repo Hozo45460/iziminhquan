@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #e7fbff;
+    color: rgba(231, 251, 255, 0.9);
     font-family: 'Montserrat', sans-serif;
     user-select: none;
 }
@@ -38,7 +38,7 @@ body::before {
     height: 400px;
     background: linear-gradient(#ffc107, #e91e63);
     border-radius: 50%;
-    transform: translate(-250px, -160px);
+    transform: translate(-260px, -160px);
 }
 
 body::after {
@@ -48,7 +48,9 @@ body::after {
     height: 350px;
     background: linear-gradient(#2196f3, #31ff38);
     border-radius: 50%;
-    transform: translate(220px, 200px);
+    transform: translate(184px, 202px);
+    filter: blur(5px);
+
 }
 
 .shape::before {
@@ -72,15 +74,15 @@ body::after {
     width: 100%;
     height: 100%;
     background: linear-gradient(#2196f3, #e91e63);
-    clip-path: circle(20% at 10% 10%);
+    clip-path: circle(28% at 10% 10%);
 }
 
 .profile-container {
     z-index: 9999;
     position: relative;
     width: 400px;
-    padding: 100px 80px 40px;
-    border-radius: 15px;
+    padding: 100px 75px 40px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,14 +91,14 @@ body::after {
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     border-left: 1px solid rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(25px);
 }
 
 .img-container {
     width: 130px;
     height: 130px;
     overflow: hidden;
-    border: 5px solid #e7fbff;
+    border: 4px solid #f5fdff;
     border-radius: 50%;
     box-shadow: 0 9px 55px rgba(231, 251, 255, 0.7);
     position: absolute;
@@ -126,7 +128,7 @@ body::after {
 }
 
 .full-name {
-    color: #d1f8ff;
+    color: #fff;
     font-size: 1.4em;
     font-weight: bold;
     letter-spacing: 1px;
@@ -137,7 +139,7 @@ body::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom:20px
+    margin-bottom:15px;
 }
 
 .social-container i {
@@ -186,7 +188,8 @@ body::after {
     outline: none;
     cursor: pointer;
     color: #fff;
-    background-color: #d31258;
+    // background-color: #d31258;
+    background: linear-gradient(70deg, #4776E6, #8E54E9);
     border: none;
     border-radius: 50px;
     padding: 12px 20px;
@@ -201,15 +204,10 @@ body::after {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.action.message {
-    background-color: #6741ff;
-}
-
 .action:hover {
     transform: scale(1.05);
     opacity: 0.8;
 }
-
 
 $color-particle: #fff;
 $spacing: 2560px;
