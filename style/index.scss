@@ -2,18 +2,55 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: rgba(231, 251, 255, 0.9);
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
     user-select: none;
 }
 
 body {
+    overflow: hidden;
     min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #161623;
+}
+
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #161623;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border: 7px solid;
+    color: #3498db;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: loader 1.2s linear;
+}
+
+@keyframes loader {
+    25% {
+        color: #2ecc71;
+    }
+    50% {
+        color: #f1c40f
+    }
+    75% {
+        color: #e74c3c;
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -34,11 +71,11 @@ body {
 body::before {
     content: '';
     position: absolute;
-    width: 400px;
-    height: 400px;
+    width: 360px;
+    height: 360px;
     background: linear-gradient(#ffc107, #e91e63);
     border-radius: 50%;
-    transform: translate(-260px, -160px);
+    transform: translate(-240px, -180px);
 }
 
 body::after {
@@ -49,8 +86,6 @@ body::after {
     background: linear-gradient(#2196f3, #31ff38);
     border-radius: 50%;
     transform: translate(184px, 202px);
-    filter: blur(5px);
-
 }
 
 .shape::before {
@@ -78,11 +113,11 @@ body::after {
 }
 
 .profile-container {
-    z-index: 9999;
+    z-index: 100;
     position: relative;
     width: 400px;
     padding: 100px 75px 40px;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,22 +199,22 @@ body::after {
 }
 
 .social-container button.youtube {
-    background: linear-gradient(45deg, #FF416C, #FF4B2B);
+    background: linear-gradient(45deg, #FF416C, #ff6122);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .social-container button.facebook {
-    background: linear-gradient(45deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(45deg, #0072ff, #36D1DC);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .social-container button.discord {
-    background: linear-gradient(45deg, #4568DC, #B06AB3);
+    background: linear-gradient(45deg, #6A82FB, #FC5C7D);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 .social-container button.danchoi {
-    background: linear-gradient(45deg, #1D976C, #93F9B9);
+    background: linear-gradient(45deg, #F37335, #FFC371);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
 }
@@ -188,8 +223,7 @@ body::after {
     outline: none;
     cursor: pointer;
     color: #fff;
-    // background-color: #d31258;
-    background: linear-gradient(70deg, #4776E6, #8E54E9);
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
     border: none;
     border-radius: 50px;
     padding: 12px 20px;
