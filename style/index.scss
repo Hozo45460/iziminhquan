@@ -51,11 +51,11 @@ body {
     100% { transform: translate(148px,80px) scale(0); }
 }
 @keyframes ldio-lxmyzumg8ar-c {
-    0% { background: #7BDFF2 }
-    25% { background: #B2F7EF }
-    50% { background: #F7D6E0 }
-    75% { background: #F2B5D4}
-    100% { background: #7BDFF2 }
+    0% { background: #72DDF7 }
+    25% { background: #F7AEF8 }
+    50% { background: #B388EB }
+    75% { background: #8093F1}
+    100% { background: #72DDF7 }
 }
 .ldio-lxmyzumg8ar div {
     position: absolute;
@@ -63,29 +63,29 @@ body {
     height: 40px;
     border-radius: 50%;
     transform: translate(80px,80px) scale(1);
-    background: #7BDFF2;
+    background: #72DDF7;
     animation: ldio-lxmyzumg8ar 1s infinite cubic-bezier(0,0.5,0.5,1);
 }
 .ldio-lxmyzumg8ar div:nth-child(1) {
-    background: #F2B5D4;
+    background: #8093F1;
     transform: translate(148px,80px) scale(1);
     animation: ldio-lxmyzumg8ar-r 0.25s infinite cubic-bezier(0,0.5,0.5,1), ldio-lxmyzumg8ar-c 1s infinite step-start;
 
 }.ldio-lxmyzumg8ar div:nth-child(2) {
     animation-delay: -0.25s;
-    background: #7BDFF2;
+    background: #72DDF7;
 
 }.ldio-lxmyzumg8ar div:nth-child(3) {
     animation-delay: -0.5s;
-    background: #F2B5D4;
+    background: #8093F1;
 
 }.ldio-lxmyzumg8ar div:nth-child(4) {
     animation-delay: -0.75s;
-    background: #F7D6E0;
+    background: #B388EB;
 
 }.ldio-lxmyzumg8ar div:nth-child(5) {
     animation-delay: -1s;
-    background: #B2F7EF;
+    background: #F7AEF8;
 }
 .loadingio-spinner-ellipsis-gj3qwcimon8 {
     width: 200px;
@@ -194,7 +194,7 @@ body::after {
     width: 130px;
     height: 130px;
     overflow: hidden;
-    border: 3px solid #f5fdff;
+    border: 4px solid #f5fdff;
     border-radius: 50%;
     box-shadow: 0 9px 55px rgba(231, 251, 255, 0.6);
     position: absolute;
@@ -300,7 +300,7 @@ body::after {
     transition: transform 0.3s, opacity 0.3s;
     // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
-    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.5);
     background-size: 300% 100%;
     -moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
