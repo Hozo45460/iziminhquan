@@ -17,6 +17,10 @@ body {
     background: #161623;
 }
 
+.preloading {
+    overflow: hidden;
+}
+
 .loader-container {
     width: 100%;
     min-height: 100vh;
@@ -28,16 +32,16 @@ body {
     justify-content: center;
 }
 
-.loader {
-    // width: 80px;
-    // height: 80px;
-    // border: 6px solid;
-    // color: #3498db;
-    // border-radius: 50%;
-    // border-top-color: transparent;
-    // border-bottom-color: transparent;
-    // animation: loader 1.2s linear;
-}
+// .loader {
+//     width: 80px;
+//     height: 80px;
+//     border: 6px solid;
+//     color: #3498db;
+//     border-radius: 50%;
+//     border-top-color: transparent;
+//     border-bottom-color: transparent;
+//     animation: loader 1.2s linear;
+// }
 
 @keyframes ldio-lxmyzumg8ar {
     0% { transform: translate(12px,80px) scale(0); }
