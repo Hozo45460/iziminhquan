@@ -161,7 +161,7 @@ body::after {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#f00, #f0f);
+    background: linear-gradient(#ff5858, #f857a6);
     clip-path: circle(30% at right 70%);
 }
 
@@ -180,8 +180,8 @@ body::after {
 .profile-container {
     z-index: 100;
     position: relative;
-    width: 400px;
-    padding: 100px 75px 40px;
+    max-width: 400px;
+    padding: 100px 70px 40px;
     border-radius: 30px;
     display: flex;
     flex-direction: column;
